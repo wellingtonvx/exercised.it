@@ -1,0 +1,46 @@
+
+.container{
+  height: 100vh;
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container section{
+  flex: 1;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 6.25rem;
+
+  align-content: center; /*deixa tudo alinhado verticalmente*/
+
+  margin: 3rem;
+}
+
+@media(max-width: 1080px){
+  .container section{
+    margin: 3rem;
+    
+  }
+}
+
+@media(max-width:720px){
+
+
+  .container section{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+  
+}
